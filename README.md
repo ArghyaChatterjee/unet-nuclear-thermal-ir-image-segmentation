@@ -5,9 +5,11 @@
   4. This work is dedicated to ‘Arshiya Smyrna’, daughter of Dr. M.I. Abir, who was born just a month ago. 
   5. Dr. Abir who is a Postdoctoral Research Associate at the Department of Nuclear Science and Engineering in Massachusetts        Institute of Technology (MIT) and a contributor of this code, provided constant support and guidance during this work for      which I am grateful to him. Dedicating this work to his daughter is just a small token of gratitude from my side nothing        else. <br >
   5. I am also thankful to Dr. M. Bucci, Professor of the Department of Nuclear Science and Engineering at Massachusetts            Institute of Technology (MIT) & the lab for letting me use some of the IR images from their Expensive Setup inside Nuclear      Reactor Laboratory in order to complete my thesis. <br >
-  6. Special thanks to my respectable supervisor Dr. Maglub Al Nur, Professor of Mechanical Engineering Department at                Bangladesh University of Engineering and Technology (BUET), for providing me the opportunity to work on this topic and          keeping faith in me that I can complete such a delicate task within this one year time period. His continuous support,          motivation, friendly behaviour and pragmatic idea backed by helpful mentality really made this work as it is till now.
-  7. If you want to cite my research work, please mention it in the reference section of your paper like this way:
+  6. Result obtained after successive operation:
+                   ![](Logo/Image.png)
+  7. Special thanks to my respectable supervisor Dr. Maglub Al Nur, Professor of Mechanical Engineering Department at                Bangladesh University of Engineering and Technology (BUET), for providing me the opportunity to work on this topic and          keeping faith in me that I can complete such a delicate task within this one year time period. His continuous support,          motivation, friendly behaviour and pragmatic idea backed by helpful mentality really made this work as it is till now.
+  8. If you want to cite my research work, please mention it in the reference section of your paper like this way:
      `Chatterjee, Arghya. Computational Investigation on Pool Boiling IR Images for Segmentation of Dry Spots Automatically and       Evaluating the Performance of Traditional Image Processing and Deep Neural Networks in Quantifying Dry Area Segments.           Diss. Bangladesh University of Engineering and Technology, 2019.`
-  8. If you want to cite the code, please add the doi number to the reference section of your research paper:
+  9. If you want to cite the code, please add the doi number to the reference section of your research paper:
       [![DOI](https://zenodo.org/badge/224518388.svg)](https://zenodo.org/badge/latestdoi/224518388)
   
