@@ -1,14 +1,17 @@
 # U-net-Deep-Convolutional-Neural-Network-for-Pool-boiling-IR-Image-segmentation
-  1. We evaluated qualitative as well as quantitative performance of different image processing and CNN based automatic methods      with manually segmented results on Pool Boiling Infra-Red images by measuring important boiling heat transfer parameters        statistically for each scheme.<br >
-  2. The time-lapsed high speed pool boiling IR image dataset used in this study unfortunately is not open source and one needs      special permission to use this dataset as the dataset is produced inside expensive experimental setup of MIT’s Nuclear          Reactor Laboratory.<br >
-  3. One who has access to the dataset can use the code to reproduce the result published in my undergrad thesis. My undergrad      Thesis link: https://www.researchgate.net/publication/333371480 <br > 
-  4. Dr. Abir who is a Postdoctoral Research Associate at the Department of Nuclear Science and Engineering in Massachusetts        Institute of Technology (MIT) and a contributor of this code, provided constant support and guidance during this work for      which I am grateful to him. Dedicating this work to his daughter is just a small token of gratitude from my side nothing        else. <br >
-  5. I am also thankful to Dr. M. Bucci, Professor of the Department of Nuclear Science and Engineering at Massachusetts            Institute of Technology (MIT) & the lab for letting me use some of the IR images from their Expensive Setup inside Nuclear      Reactor Laboratory in order to complete my thesis. <br >
-  6. Result obtained after successive operation:
-                   ![](Logo/Image.png)
-  7. Special thanks to my respectable supervisor Dr. Maglub Al Nur, Professor of Mechanical Engineering Department at                Bangladesh University of Engineering and Technology (BUET), for providing me the opportunity to work on this topic and          keeping faith in me that I can complete such a delicate task within this one year time period. His continuous support,          motivation, friendly behaviour and pragmatic idea backed by helpful mentality really made this work as it is till now.
-  8. If you want to cite my research work, please mention it in the reference section of your paper like this way:
-     `Chatterjee, Arghya. Computational Investigation on Pool Boiling IR Images for Segmentation of Dry Spots Automatically and       Evaluating the Performance of Traditional Image Processing and Deep Neural Networks in Quantifying Dry Area Segments.           Diss. Bangladesh University of Engineering and Technology, 2019.`
-  9. If you want to cite the code, please add the doi number to the reference section of your research paper:
+- If you want to cite the code, please add the doi number to the reference section of your research paper:
       [![DOI](https://zenodo.org/badge/224518388.svg)](https://zenodo.org/badge/latestdoi/224518388)
+- If you want to cite my research work, please mention it in the reference section of your paper like this way:
+```
+Chatterjee, Arghya. Computational Investigation on Pool Boiling IR Images for Segmentation of Dry Spots Automatically and Evaluating the Performance of Traditional Image Processing and Deep Neural Networks in Quantifying Dry Area Segments. Diss. Bangladesh University of Engineering and Technology, 2019.
+```
+- We evaluated qualitative as well as quantitative performance of different image processing and CNN based automatic methods with manually segmented results on Pool Boiling Infra-Red images by measuring important boiling heat transfer parameters statistically for each scheme.
+- The time-lapsed high speed pool boiling IR image dataset used in this study unfortunately is not open source and one needs special permission to use this dataset as the dataset is produced inside expensive experimental setup of MIT’s Nuclear Reactor Laboratory.
+- One who has access to the dataset can use the code to reproduce the result published in my undergrad thesis. My undergrad Thesis link: https://www.researchgate.net/publication/333371480
+- Dr. Abir who is a Postdoctoral Research Associate at the Department of Nuclear Science and Engineering in Massachusetts Institute of Technology (MIT) and a contributor of this code, provided constant support and guidance during this work for which I am grateful to him. Dedicating this work to his daughter is just a small token of gratitude from my side nothing else.
+- I am also thankful to Dr. M. Bucci, Professor of the Department of Nuclear Science and Engineering at Massachusetts Institute of Technology (MIT) & the lab for letting me use some of the IR images from their Expensive Setup inside Nuclear Reactor Laboratory in order to complete my thesis.
+- Here is a short demonstration of my work. For better quality, see the demo on [youtube](https://www.youtube.com/watch?v=Px55bKnRF9A). <br>
+                                              ![](Thesis.gif)
+- Special thanks to my respectable supervisor Dr. Maglub Al Nur, Professor of Mechanical Engineering Department at Bangladesh University of Engineering and Technology (BUET), for providing me the opportunity to work on this topic and keeping faith in me that I can complete such a delicate task within this one year time period. His continuous support, motivation, friendly behaviour and pragmatic idea backed by helpful mentality really made this work as it is till now.
+
   
