@@ -32,14 +32,15 @@
 - We chose 10% of our training data as a validation set (i.e., 30 images from 300 training images). The network is trained on 270 training images and evaluated by 30 validation images. 
 - The network is trained for 275 epochs using binary cross-entropy loss and optimized using Adam optimization with a learning rate of 0.01. After training, the test set is used to evaluate the trained model.         
 ### Run the Model:
-- Download the repository in your local computer. Unzip the file to extract the documents. 
+- Download the repository in your local computer. Unzip the file to extract the documents in a folder. 
 - Download and Install anaconda distribution from here: https://www.anaconda.com/.
 - Source the environment variables for anaconda. Files attached here are python programs written & compiled inside jupyter notebook which is an editor & shareable compiler of anaconda distribution. 
+- Download and install Keras and Tensorflow (Machine Learning Framework & Library developed by Google). You can download tensorflow from here: https://www.tensorflow.org/. 
 - Put the training dataset inside 'Input/train' folder and manually segmented dataset inside 'Input/mask' folder. Then run the train.ipynb file cell by cell. When you run the last cell,the program will start to generate a weight file at each epoch. The weight files will be stored inside 'weights' folder. Keep the best weight file (the last one) and delete the rest of them.
 - Put the testing dataset inside 'Input/test' folder. You have to specify the best weight file name that you created in the previous segment in this line 'model.load_weights('weights/unet_256_arghya.272-0.03398-0.96499.h5')' inside Test.ipynb file. By default, a weight file is included inside 'weights' folder of this repository which was generated after 272 epochs of training. 
 - After running the last cell of Test.ipynb file, you will get your segmented pictures inside current folder.
 - You can do several types of analysis with your segmented results ( by Image Processing and DCNN) using MIPAR. 
-- You can plot the data (which you generated from MIPAR) using Data related graph plots.ipynb file and visualize them. 
+- You can plot the data (which you generated from MIPAR) using 'Data related graph plots.ipynb' file and visualize the plots using matplotlib. 
 ## Software and Hardware Specification:
 - We demonstrate the application of Traditional Image Processing operations and U-net DCNN for detection as well as quantification of dry area from pool boiling data. 
 - We used free version of a well known software used for segmentation called MIPAR for all image processing operations and construct the DCNN using python in jupyter notebook with frontend Keras (a high-level neural networks API capable of running on top of Tensorflow, CNTK or Theano) and backend Tensorflow (a low level open source deep learning library). 
