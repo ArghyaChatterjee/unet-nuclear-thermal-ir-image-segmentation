@@ -1,4 +1,6 @@
 # U-net-Deep-Convolutional-Neural-Network-for-Pool-boiling-IR-Image-segmentation
+## Thesis Topic:
+- Computational Investigation on Pool Boiling IR Images for Segmentation of Dry Spots Automatically and Evaluating the Performance of Traditional Image Processing and Deep Neural Networks in Quantifying Dry Area Segments.
 ## Introduction:
 - We evaluated qualitative as well as quantitative performance of different image processing and CNN based automatic methods with manually segmented results on Pool Boiling Infra-Red images by measuring important boiling heat transfer parameters statistically for each scheme.
 ## Demonstraion:
