@@ -15,6 +15,7 @@
 - If you want to cite this thesis, please mention it in the reference section of your paper like this way:
 ```
 Chatterjee, Arghya. Computational Investigation on Pool Boiling IR Images for Segmentation of Dry Spots Automatically and Evaluating the Performance of Traditional Image Processing and Deep Neural Networks in Quantifying Dry Area Segments. Diss. Bangladesh University of Engineering and Technology, 2019.
+```
 - For further query regarding this work, you can contact me. My email address is: [arghyame20buet@gmail.com](mailto:arghyame20buet@gmail.com)
 
   
