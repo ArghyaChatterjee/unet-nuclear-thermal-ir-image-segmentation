@@ -36,9 +36,9 @@
 - Download and Install anaconda distribution from here: https://www.anaconda.com/.
 - Source the environment variables for anaconda. Files attached here are python programs written & compiled inside jupyter notebook which is an editor & shareable compiler of anaconda distribution. 
 - Download and install Keras and Tensorflow (Machine Learning Framework & Library developed by Google). You can download tensorflow from here: https://www.tensorflow.org/. 
-- Put the training dataset inside 'Input/train' folder and manually segmented dataset inside 'Input/mask' folder. Then run the train.ipynb file cell by cell. When you run the last cell,the program will start to generate a weight file at each epoch. The weight files will be stored inside 'weights' folder. Keep the best weight file (the last one) and delete the rest of them.
+- Put the training dataset inside 'Input/train' folder and manually segmented dataset inside 'Input/mask' folder. Then run the 'train.ipynb' file cell by cell. When you run the last cell,the program will start to generate a weight file at each epoch. The weight files will be stored inside 'weights' folder. Keep the best weight file (the last one) and delete the rest of them.
 - Put the testing dataset inside 'Input/test' folder. You have to specify the best weight file name that you created in the previous segment in this line 'model.load_weights('weights/unet_256_arghya.272-0.03398-0.96499.h5')' inside Test.ipynb file. By default, a weight file is included inside 'weights' folder of this repository which was generated after 272 epochs of training. 
-- After running the last cell of Test.ipynb file, you will get your segmented pictures inside current folder.
+- After running the last cell of 'Test.ipynb' file, you will get your segmented pictures inside current folder.
 - You can do several types of analysis with your segmented results ( by Image Processing and DCNN) using MIPAR. 
 - You can plot the data (which you generated from MIPAR) using 'Data related graph plots.ipynb' file and visualize the plots using matplotlib. 
 ## Software and Hardware Specification:
