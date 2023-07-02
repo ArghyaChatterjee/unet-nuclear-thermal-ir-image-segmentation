@@ -24,7 +24,9 @@
 - Therefore, Morphological Dilation operation is performed to dilate the segmented dry spots in order to complement the loss of segmented areas in previous operation. The depth parameter is set to 3 which is the number of pixels by which selected regions will be grown in all directions.
 ## Deep Neural Network For Dry Spot Segmentation:
 ### Run the Model:
-- Download the repository in your local computer. Unzip the file to extract the documents in a folder. 
+```
+  git clone https://github.com/ArghyaChatterjee/unet-nuclear-thermal-ir-image-segmentation.git unet_ir_img_seg
+```
 - Download and Install anaconda distribution from here: https://www.anaconda.com/.
 - Source the environment variables for anaconda. Files attached here are python programs written & compiled inside jupyter notebook which is an editor & shareable compiler of anaconda distribution. 
 - Download and install Keras and Tensorflow (Machine Learning Framework & Library developed by Google). You can download tensorflow from here: https://www.tensorflow.org/. 
