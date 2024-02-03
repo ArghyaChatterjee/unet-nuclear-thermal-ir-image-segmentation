@@ -1,8 +1,8 @@
 # U-net-Deep-Convolutional-Neural-Network-for-Pool-boiling-IR-Image-segmentation
+The original work was performed as part of my BSc. thesis at Bangladesh University of Engineering and Technology (BUET) in 2019.
+
 ## Update:
 An upgraded version of UNet in pytorch has been released as part of the ISR departmental project at UWF. The previous version for training and testing the UNet was in tensorflow.
-
-The original work was performed as part of my BSc. thesis at Bangladesh University of Engineering and Technology (BUET) in 2019.
 
 ## Thesis Topic:
 - Computational Investigation on Pool Boiling IR Images for Segmentation of Dry Spots Automatically and Evaluating the Performance of Traditional Image Processing and Deep Neural Networks in Quantifying Dry Area Segments.
