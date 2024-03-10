@@ -31,7 +31,7 @@ An upgraded version of UNet in pytorch has been released as part of the ISR depa
 - Therefore, Morphological Dilation operation is performed to dilate the segmented dry spots in order to complement the loss of segmented areas in previous operation. The depth parameter is set to 3 which is the number of pixels by which selected regions will be grown in all directions.
 
 ## Deep Neural Network For Dry Spot Segmentation:
-### Run the Model with pytorch (New version):
+### Run with pytorch (New version):
 With the pytorch version, here is how you can train the model:
 ```
 git clone https://github.com/ArghyaChatterjee/unet-nuclear-thermal-ir-image-segmentation.git unet_ir_img_seg
