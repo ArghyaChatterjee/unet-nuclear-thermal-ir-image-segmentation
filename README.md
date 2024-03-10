@@ -18,21 +18,38 @@ An upgraded version of UNet in pytorch has been released as part of the ISR depa
 
 ## Download Software:
 - Download MIPAR software from the following link: https://www.mipar.us/
-## Simple Operation:
+## Simple IP Operation:
 - Load images inside MIPAR. 
 - We first try a simple E-M thresholding based image processing technique to evaluate the segmentation performance. Image specific parameter tuning is essential as E-M thresholding is prone to detect background noise uniquely in each image. We use 8-pixel connectivity (face-based) for all images to determine local minima as the basis for the E-M threshold. 
 - We set maximum difference of threshold pixel intensities to 38, 37, 25, 22, 40 and 26 against 600 kW/m^2 Heat Flux (HF) frame ids respectively; 26, 19, 23, 20, 28 and 29 against 700 kW/m^2 HF frame ids respectively; 24, 31, 28, 23, 34 and 21 against 800 kW/m^2 HF frame ids respectively; 38, 33, 30, 41, 35 and 58 against 900 kW/m^2 HF frame ids respectively and 38, 47, 36, 36, 43 and 40 against 1100 kW/m^2 HF frame ids respectively. 
 - This parameter sets the maximum difference of threshold pixel intensities from the nearest local minima in order to be grouped into that minima's region.
-## Complex Operation:
+## Complex IP Operation:
 - A simple E-M threshold based segmentation method doesn’t provide accurate segmentation on a set of images. Therefore, several image processing steps are applied to obtain better segmentation performance. First, a contrast adjustment operation is performed on initial image to enhance dry spots relative to background. 
 - A Non-Local Means Filtering operation is performed afterwards to make the background smooth. The pixel window size is set to 2 which is the size of neighborhood pixels considered about each pixel for the filter, and strength parameter is set to 0.096 which is a factor that controls the strength of the filter. 
 - Then Adaptive Gaussian Thresholding operation is performed to initially segment the dry spots from their background. Again, the pixel window size is set to 6, select is set to dark and percentage value is set to 48.78% which means if a pixel is less than 48.78% of the average grayscale value in a 6 × 6 pixel window centered around it, it will be selected. 
 - Morphological Erosion operation performed afterwards to remove background noise from binary segmented image. Threshold parameter is set to 5 which is the minimum number of empty pixels that must surround a selected pixel for it to be removed, and iterations is set to 10 which is the number of iterations to perform the erosion. However, erosion operation decreases the amount of dry areas. 
 - Therefore, Morphological Dilation operation is performed to dilate the segmented dry spots in order to complement the loss of segmented areas in previous operation. The depth parameter is set to 3 which is the number of pixels by which selected regions will be grown in all directions.
+
 ## Deep Neural Network For Dry Spot Segmentation:
-### Run the Model:
+### Run the Model with pytorch (New version):
+With the pytorch version, here is how you can train the model:
 ```
-  git clone https://github.com/ArghyaChatterjee/unet-nuclear-thermal-ir-image-segmentation.git unet_ir_img_seg
+git clone https://github.com/ArghyaChatterjee/unet-nuclear-thermal-ir-image-segmentation.git unet_ir_img_seg
+cd unet_ir_img_seg/pytorch_version
+python3 unet_training.py
+```
+Give proper input and output directory paths before running training script.
+
+In order to test the model with manually labeled Ground Truth segmented images, run:
+```
+python3 unet_testing.py
+```
+Don't forget to specify the dataset input folder paths for testing.
+
+### Run with Tensorflow in ipynb (ipython notebook, Old version):
+```
+git clone https://github.com/ArghyaChatterjee/unet-nuclear-thermal-ir-image-segmentation.git unet_ir_img_seg
+cd unet_ir_img_seg
 ```
 - Download and Install anaconda distribution from here: https://www.anaconda.com/.
 - Source the environment variables for anaconda. Files attached here are python programs written & compiled inside jupyter notebook which is an editor & shareable compiler of anaconda distribution. 
@@ -42,10 +59,12 @@ An upgraded version of UNet in pytorch has been released as part of the ISR depa
 - After running the last cell of 'Test.ipynb' file, you will get your segmented images inside current folder.
 - You can do several types of analysis with your segmented results ( by Image Processing and DCNN) using MIPAR. 
 - You can plot the data (which you generated from MIPAR) using 'Data related graph plots.ipynb' file and visualize the plots using matplotlib. 
+
 ### Semi-automatic Ground Truth Formation
 - In this work, we employed a semi-automatic strategy for training data segmentation. The successive image processing steps generate false positives and false negatives in the segmentation map that could severely affect the results when testing the network. 
 - We found that even the smallest false positive dry areas can significantly affect segmentation results when testing the trained network. This could be due to two reasons - (1) when false positives are present, the network learns parameters to detect background regions that actually have the features of foreground dry spots, (2) since we perform data augmentation, there is high chance that the false positives are present in multiple training samples. Therefore, the images obtained from the previous image processing steps were manually edited to remove false positives and add false negatives. 
 - The training images and their corresponding segmentation map (ground truth) are used to train the DCNN. Each segmented image is labeled, and each label indicates a particular feature in the image. The quality of segmentation, as well as the quantity, are crucial for accurate training using DCNN.
+  
 ### Deep Convolutional Neural Network Architecture  
 - The input images are single-channel grayscale IR images and the output images are binary segmentation maps in which the black pixels correspond to the dry areas, and the white pixels correspond to the background. 
 - Each contracting path consists of two consecutive 3×3 padded convolutions. Each convolution follows a batch normalization and a rectified linear unit (ReLU) and a 2×2 max pooling operation with stride 2 for downsampling. This step not only extracts advanced features but also reduces feature map size. The first subsection in the U-net network consists of 32 output channels. The output channels double the number in each subsequent subsections. The expansive path up samples the feature maps followed by 2×2 up-convolution, concatenated feature map from the contracting path, three 3×3 convolutions, each followed by a ReLU. A 1×1 convolution is used at the final layer to map feature vectors to the desired number of classes (i.e. 1). 
