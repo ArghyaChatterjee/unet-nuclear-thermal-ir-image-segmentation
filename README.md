@@ -46,7 +46,7 @@ python3 unet_testing.py
 ```
 Don't forget to specify the dataset input folder paths for testing.
 
-### Run with Tensorflow in ipynb (ipython notebook, Old version):
+### Run with Tensorflow in ipynb (Old version):
 ```
 git clone https://github.com/ArghyaChatterjee/unet-nuclear-thermal-ir-image-segmentation.git unet_ir_img_seg
 cd unet_ir_img_seg
