@@ -6,13 +6,15 @@ An upgraded version of UNet in pytorch has been released as part of the ISR depa
 
 ## Thesis Topic:
 - Computational Investigation on Pool Boiling IR Images for Segmentation of Dry Spots Automatically and Evaluating the Performance of Traditional Image Processing and Deep Neural Networks in Quantifying Dry Area Segments.
-## Introduction:
-- We evaluated qualitative as well as quantitative performance of different image processing and CNN based automatic methods with manually segmented results on Pool Boiling Infra-Red images by measuring important boiling heat transfer parameters statistically for each scheme.
+
 ## Demonstraion:
 - Here is a short demonstration of my work. For better quality, see the demo on [youtube](https://www.youtube.com/watch?v=Px55bKnRF9A). 
 <p align="center">
     <img src="Thesis.gif", width="800">
 </p>
+
+## Introduction:
+- We evaluated qualitative as well as quantitative performance of different image processing and CNN based automatic methods with manually segmented results on Pool Boiling Infra-Red images by measuring important boiling heat transfer parameters statistically for each scheme.
 
 ## Download Software:
 - Download MIPAR software from the following link: https://www.mipar.us/
