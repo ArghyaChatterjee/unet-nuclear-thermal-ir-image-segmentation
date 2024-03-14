@@ -1,4 +1,4 @@
-# U-net-Deep-Convolutional-Neural-Network-for-Pool-boiling-IR-Image-segmentation
+# U-net-For-Automatic-Nuclear-Thermal-IR-Image-Segmentation
 The original work was performed as part of my BSc. thesis at Bangladesh University of Engineering and Technology (BUET) in 2019.
 
 ## Update:
