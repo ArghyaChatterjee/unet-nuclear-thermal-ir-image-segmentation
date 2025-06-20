@@ -1,4 +1,4 @@
-# U-net-For-Automatic-Nuclear-Thermal-IR-Image-Segmentation
+# U-net For Automatic Nuclear Thermal IR Image Segmentation
 The original work was performed as part of my BSc. thesis at Bangladesh University of Engineering and Technology (BUET) in 2019.
 
 ## Update:
