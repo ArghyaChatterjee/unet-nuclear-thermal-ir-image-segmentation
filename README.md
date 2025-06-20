@@ -1,5 +1,5 @@
 # U-Net for Nuclear Thermal IR Image Segmentation
-The original work was performed as part of my BSc. thesis at Bangladesh University of Engineering and Technology in 2019.
+The work was performed as part of my BSc. thesis at Bangladesh University of Engineering and Technology in 2019.
 
 ## Update:
 An upgraded version of UNet in pytorch has been released as part of the ISR departmental project at UWF. The previous version for training and testing the UNet was in tensorflow.
